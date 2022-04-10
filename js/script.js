@@ -12,3 +12,12 @@ function back(){
     document.getElementById('result').innerHTML = result.substring(0, result.length-1);
 }
 
+function calculate(){
+    var result = document.getElementById('result').innerHTML;
+    if(result){
+        document.getElementById('result').innerHTML = eval(result)
+    }
+    else{
+        document.getElementById('result').innerHTML = "Null"
+    }
+}
